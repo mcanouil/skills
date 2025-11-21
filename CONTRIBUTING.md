@@ -41,10 +41,48 @@ category-name/
     ├── references/           # Optional: Supporting documentation
     │   └── guide.md
     ├── scripts/              # Optional: Helper scripts
-    │   └── helper.sh
+    │   ├── helper.sh
+    │   └── use_package.R
     ├── templates/            # Optional: Document templates
     │   └── template.md
     └── README.md             # Optional but recommended: User documentation
+```
+
+Runnable R scripts should start with a shebang line, include internal usage documentation, use minimal package dependencies, and error if required packages are missing.
+
+```r
+#!/usr/bin/env Rscript
+# Add a package dependency to DESCRIPTION using usethis::use_package()
+#
+# Usage:
+#   Rscript add_package.R <package> [<type>] [<min_version>]
+#
+# Arguments:
+#   package: Name of the package to add as a dependency
+#   type: Optional dependency type (Imports, Suggests, Depends, LinkingTo)
+#         Default: "Imports"
+#   min_version: Optional minimum version (e.g., "2.5.0" or "TRUE" for current)
+#
+# Examples:
+#   Rscript add_package.R "ggplot2"
+#   Rscript add_package.R "dplyr" "Suggests"
+#   Rscript add_package.R "rlang" "Imports" "1.0.0"
+
+args <- commandArgs(trailingOnly = TRUE)
+
+# Check if usethis is installed
+if (!requireNamespace("usethis", quietly = TRUE)) {
+  cat("Error: usethis package is not installed\n")
+  cat("Install it with: install.packages('usethis')\n")
+  quit(status = 1)
+}
+
+# check and setup arguments (this would be more developed in practice)...
+package <- args[1]
+type <- if (length(args) >= 2) args[2] else "Imports"
+min_version <- if (length(args) >= 3) args[3] else NULL
+
+usethis::use_package(package, type, min_version)
 ```
 
 ### 3. SKILL.md Format
