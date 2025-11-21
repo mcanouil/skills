@@ -26,6 +26,24 @@
       "skills": [
         "./r-lib/testing-r-packages"
       ]
+    },
+    {
+      "name": "shiny",
+      "description": "Collection of skills for Shiny app development",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./brand-yml"
+      ]
+    },
+    {
+      "name": "quarto",
+      "description": "Collection of skills for Quarto document creation",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./brand-yml"
+      ]
     }
   ]
 }

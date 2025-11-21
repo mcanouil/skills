@@ -18,14 +18,14 @@ Determine which category your skill belongs to:
 |----------|-------------|
 | **open-source** | General open-source package development and maintenance |
 | **r-lib** | R package development with the r-lib ecosystem |
+| **shiny** | Shiny app development and deployment |
+| **quarto** | Quarto document creation and publishing |
 
 Other ideas for categories include:
 
 | Category | Description |
 |----------|-------------|
 | **tidyverse** | Tidyverse-specific package development |
-| **shiny** | Shiny app development and deployment |
-| **quarto** | Quarto document creation and publishing |
 | **connect** | Posit Connect deployment and management |
 
 Feel free to propose new categories if needed.

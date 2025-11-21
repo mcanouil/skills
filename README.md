@@ -26,6 +26,18 @@ R package development skills for working with the r-lib ecosystem and modern R p
 
 - **[testing-r-packages](./r-lib/testing-r-packages/)** - Best practices for writing R package tests using testthat 3+, including test structure, expectations, fixtures, snapshots, mocking, and BDD-style testing
 
+### Shiny
+
+Skills for Shiny app development in both R and Python.
+
+- **[brand-yml](./brand-yml/)** - Create and apply brand.yml files for consistent styling across Shiny apps, with support for bslib (R) and ui.Theme (Python), including automatic brand discovery and theming functions for plots and tables
+
+### Quarto
+
+Skills for Quarto document creation and publishing.
+
+- **[brand-yml](./brand-yml/)** - Create and apply brand.yml files for consistent styling across Quarto projects, supporting HTML documents, dashboards, RevealJS presentations, Typst PDFs, and websites with automatic brand discovery and theme layering
+
 ## Installation
 
 ### Claude Code
@@ -107,12 +119,12 @@ This repository organizes skills into categories to make it easier to find and i
 |----------|-------------|
 | **open-source** | General open-source package development and maintenance |
 | **r-lib** | R package development with the r-lib ecosystem |
+| **shiny** | Shiny app development and deployment (R and Python) |
+| **quarto** | Quarto document creation and publishing |
 
-<!-- Other ideas for categories
+<!-- Future category ideas
 
 | **tidyverse** | Tidyverse-specific package development |
-| **shiny** | Shiny app development and deployment |
-| **quarto** | Quarto document creation and publishing |
 | **connect** | Posit Connect deployment and management |
 -->
 
