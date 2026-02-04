@@ -16,7 +16,8 @@ Determine which category your skill belongs to:
 
 | Category | Description |
 |----------|-------------|
-| **open-source** | General open-source package development and maintenance |
+| **posit-dev** | General-purpose developer skills (code review, architecture docs) |
+| **open-source** | Open-source R/Python package workflows (releases, changelogs) |
 | **r-lib** | R package development with the r-lib ecosystem |
 | **shiny** | Shiny app development and deployment |
 | **quarto** | Quarto document creation and publishing |

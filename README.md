@@ -6,13 +6,18 @@ Claude Skills extend Claude's capabilities with specialized knowledge and workfl
 
 ## Available Skills
 
+### Posit Developer
+
+General-purpose developer skills useful across any language, project type, or context.
+
+- **[critical-code-reviewer](./posit-dev/critical-code-reviewer/)** - Conduct rigorous, adversarial code reviews identifying security holes, lazy patterns, edge case failures, and bad practices across Python, R, JavaScript/TypeScript, SQL, and front-end code
+- **[describe-design](./posit-dev/describe-design/)** - Research a codebase and create architectural documentation describing how features or systems work, with Mermaid diagrams and stable code references suitable for humans and AI agents
+
 ### Open Source
 
-Open Source skills support internal open-source package workflows.
+Skills for open-source R and Python package developers, streamlining common workflows like releases, changelogs, and contributor acknowledgments.
 
 - **[create-release-checklist](./open-source/create-release-checklist/)** - Create a release checklist and GitHub issue for an R package, with automatic version calculation and customizable checklist generation
-- **[critical-code-reviewer](./open-source/critical-code-reviewer/)** - Conduct rigorous, adversarial code reviews identifying security holes, lazy patterns, edge case failures, and bad practices across Python, R, JavaScript/TypeScript, SQL, and front-end code
-- **[describe-design](./open-source/describe-design/)** - Research a codebase and create architectural documentation describing how features or systems work, with Mermaid diagrams and stable code references suitable for humans and AI agents
 - **[release-post](./open-source/release-post/)** - Create professional package release blog posts following Tidyverse or Shiny blog conventions, with support for both R and Python packages
 
 ### R Package Development
@@ -56,6 +61,7 @@ Then browse and install the skill categories you need through the Claude Code UI
 Install specific skill categories directly:
 
 ```
+/plugin install posit-dev@posit-dev-skills
 /plugin install open-source@posit-dev-skills
 /plugin install r-lib@posit-dev-skills
 /plugin install shiny@posit-dev-skills
@@ -114,12 +120,13 @@ Claude will use the skill's knowledge to guide you through creating a properly f
 
 This repository organizes skills into categories to make it easier to find and install skills relevant to your work:
 
-| Category        | Description                                             |
-| --------------- | ------------------------------------------------------- |
-| **open-source** | General open-source package development and maintenance |
-| **r-lib**       | R package development with the r-lib ecosystem          |
-| **shiny**       | Shiny app development and deployment (R and Python)     |
-| **quarto**      | Quarto document creation and publishing                 |
+| Category        | Description                                                 |
+| --------------- | ----------------------------------------------------------- |
+| **posit-dev**   | General-purpose developer skills (code review, architecture docs) |
+| **open-source** | Open-source R/Python package workflows (releases, changelogs)     |
+| **r-lib**       | R package development with the r-lib ecosystem              |
+| **shiny**       | Shiny app development and deployment (R and Python)         |
+| **quarto**      | Quarto document creation and publishing                     |
 
 <!-- Future category ideas
 

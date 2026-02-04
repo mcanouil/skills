@@ -10,15 +10,23 @@
   },
   "plugins": [
     {
+      "name": "posit-dev",
+      "description": "General-purpose developer skills useful across any language, project type, or context",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./posit-dev/critical-code-reviewer",
+        "./posit-dev/describe-design"
+      ]
+    },
+    {
       "name": "open-source",
-      "description": "Collection of skills for general open-source package development and maintenance",
+      "description": "Collection of skills for open-source R and Python package developers",
       "source": "./",
       "strict": false,
       "skills": [
         "./open-source/release-post",
-        "./open-source/create-release-checklist",
-        "./open-source/critical-code-reviewer",
-        "./open-source/describe-design"
+        "./open-source/create-release-checklist"
       ]
     },
     {
