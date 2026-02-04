@@ -17,7 +17,8 @@
       "skills": [
         "./open-source/release-post",
         "./open-source/create-release-checklist",
-        "./open-source/critical-code-reviewer"
+        "./open-source/critical-code-reviewer",
+        "./open-source/describe-design"
       ]
     },
     {
