@@ -88,8 +88,11 @@ for review and iterate based on feedback.
 
 ### Stage 5: Finalize
 
-1. Ask the user where to save the file (if not already specified).
-2. Write the final document to the specified location.
+1. **Confirm the file location before writing.** You may propose a path based on repository
+   conventions (e.g., `docs/architecture/`, `ARCHITECTURE.md`), but NEVER write the file
+   without explicit user confirmation of the location. If the user provided a path upfront,
+   that counts as confirmation.
+2. Write the final document to the confirmed location.
 
 ## Document Template
 
