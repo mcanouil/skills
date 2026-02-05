@@ -44,10 +44,11 @@ Present a high-level outline to the user:
 2. [Component B] - Brief description
 3. [Component C] - Brief description
 
-Does this capture the scope? Should I add or remove anything?
+* Have I correctly captured the scope of the research? Reply "yes" to continue.
+* Otherwise, please let me know what I've misunderstood.
 ```
 
-Wait for user confirmation before proceeding.
+When the user confirms the scope, move on to deep research.
 
 ### Stage 3: Deep Research
 
@@ -58,6 +59,10 @@ For each component in the approved outline:
 3. Note configuration options and where they're defined.
 4. Find where data is stored or persisted.
 5. Build a code reference index (file paths + key function/class names).
+
+Try to rely on the initial code exploration for much of this information. Read
+additional files as needed. If the scope changed considerably in Stage 2, you
+can engage a second code exploration subagent.
 
 #### When to Stop Exploring
 
@@ -84,7 +89,8 @@ For each component in the approved outline:
 ### Stage 4: Document Draft
 
 Generate the document following the template below. Present the draft to the user
-for review and iterate based on feedback.
+for review and iterate based on feedback. If available, use the AskUserQuestion
+tool to request user input on key decisions.
 
 ### Stage 5: Finalize
 
