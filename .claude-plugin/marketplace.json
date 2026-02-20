@@ -59,7 +59,7 @@
       "strict": false,
       "skills": [
         "./brand-yml",
-        "./quarto/authoring"
+        "./quarto/quarto-authoring"
       ]
     }
   ]
