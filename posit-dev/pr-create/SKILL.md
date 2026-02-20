@@ -192,11 +192,16 @@ TaskUpdate:
 - metadata: {"reviewer": "<github-handle>"}
 ```
 
-Do NOT create the PR until the user approves the title, body, and (if applicable) reviewer.
+Include approval options directly in the `AskUserQuestion` call for the PR preview. The options should be:
 
-**5d. Confirm before proceeding to automated steps:**
+1. **"Looks good, proceed"** *(default)* — approve and immediately continue to Step 6
+2. **"Looks good, tell me what you'll do next"** — approve but show the plan outline before continuing
 
-Once approved, use `AskUserQuestion` to outline what happens next and get confirmation:
+Do NOT create the PR until the user has selected one of these options.
+
+**5d. Show plan outline (only if user selected option 2):**
+
+Present the following before continuing:
 
 > Here's what I'll do next:
 >
@@ -208,10 +213,8 @@ Once approved, use `AskUserQuestion` to outline what happens next and get confir
 > 6. **Request a review** from `@<reviewer>` (if applicable)
 >
 > I'll auto-fix small issues (formatting, lint, type errors, test failures). If anything bigger comes up, I'll check with you first.
->
-> Ready to proceed?
 
-Do NOT continue to Step 6 until the user confirms.
+After showing the outline, ask one more `AskUserQuestion` to confirm before proceeding to Step 6.
 
 ### Step 6: Run Local Pre-flight Checks
 
