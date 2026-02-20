@@ -9,6 +9,10 @@ description: >
   for figures, tables, sections, and equations, (6) Using Quarto-specific markdown
   features like callouts, divs, and spans, (7) Configuring YAML front matter for
   documents and projects, (8) Finding and using Quarto extensions.
+metadata:
+  author: Mickaël Canouil (@mcanouil)
+  version: "1.0"
+license: MIT
 ---
 
 # Quarto Authoring
