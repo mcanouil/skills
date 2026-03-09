@@ -9,7 +9,7 @@ description: >
   to Quarto, and creating Quarto websites, books, presentations, and reports.
 metadata:
   author: Mickaël Canouil (@mcanouil)
-  version: "1.1"
+  version: "1.2"
 license: MIT
 ---
 
