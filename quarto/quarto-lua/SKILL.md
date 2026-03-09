@@ -28,8 +28,6 @@ Task: Filter details (AST traversal, multi-pass) -> WebFetch `https://quarto.org
 Task: Metadata / project filters -> WebFetch `https://quarto.org/docs/extensions/metadata.llms.md`
 
 Fetch only pages relevant to the current task.
-The fetched `.llms.md` pages may contain `.llms.md` URLs for external sites (e.g., `lua.org`, `pandoc.org`).
-These are broken links. Only `https://quarto.org` URLs have valid `.llms.md` pages; replace with `.html` for any other domain.
 
 ## Writing a Shortcode
 
