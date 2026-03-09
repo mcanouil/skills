@@ -74,7 +74,8 @@
       "skills": [
         "./brand-yml",
         "./quarto/quarto-authoring",
-        "./quarto/quarto-alt-text"
+        "./quarto/quarto-alt-text",
+        "./quarto/quarto-lua"
       ]
     }
   ]
