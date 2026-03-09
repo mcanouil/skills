@@ -26,6 +26,7 @@ Task: Debug Lua / tooling -> WebFetch `https://quarto.org/docs/extensions/lua.ll
 Task: Shortcode details (args, raw output) -> WebFetch `https://quarto.org/docs/extensions/shortcodes.llms.md`
 Task: Filter details (AST traversal, multi-pass) -> WebFetch `https://quarto.org/docs/extensions/filters.llms.md`
 Task: Metadata / project filters -> WebFetch `https://quarto.org/docs/extensions/metadata.llms.md`
+Task: Custom AST nodes / filter timing -> Read `references/custom-ast-nodes.md` in this skill directory
 
 Fetch only pages relevant to the current task.
 
@@ -153,6 +154,24 @@ Quarto resolves `require` paths relative to the calling script's directory.
 ```bash
 quarto render example.qmd
 ```
+
+## Custom AST Nodes
+
+Quarto extends Pandoc's AST with custom node types that filters can match by name.
+
+**Block-level:** Callout, ConditionalBlock, Tabset, PanelLayout, FloatRefTarget, DecoratedCodeBlock, Theorem, Proof.
+
+**Inline-level:** Shortcode.
+
+**Other:** LatexEnvironment, LatexInlineCommand, HtmlTag.
+
+Constructors exist for: `quarto.Callout(tbl)`, `quarto.ConditionalBlock(tbl)`, `quarto.Tabset(tbl)`, `quarto.Tab(tbl)`.
+
+Cross-referenceable elements (figures, tables, listings) are represented as `FloatRefTarget` nodes.
+
+Filter timing supports eight phases (`pre-ast` through `post-finalize`) via the `at` property in `_extension.yml`.
+
+For full constructor signatures and filter timing details, read `references/custom-ast-nodes.md`.
 
 ## Resources
 
