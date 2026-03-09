@@ -180,7 +180,7 @@ Raw LaTeX content.
 
 ### Inline Raw Content
 
-`arkdown
+````markdown
 Text with `<br>`{=html} line break.
 ````
 
@@ -341,5 +341,3 @@ Special classes:
 
 - [Pandoc Divs and Spans](https://pandoc.org/MANUAL.html#divs-and-spans)
 - [Quarto Markdown Basics](https://quarto.org/docs/authoring/markdown-basics.html)
-
-
