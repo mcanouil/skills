@@ -40,7 +40,7 @@ Content with attributes.
 
 ## Nested Divs
 
-Use more colons for outer div:
+Nest divs inside each other:
 
 ````markdown
 ::: {.outer}
