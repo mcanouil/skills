@@ -26,7 +26,7 @@ Task: Debug Lua / tooling -> Read `https://quarto.org/docs/extensions/lua.llms.m
 Task: Shortcode details (args, raw output) -> Read `https://quarto.org/docs/extensions/shortcodes.llms.md`
 Task: Filter details (AST traversal, multi-pass) -> Read `https://quarto.org/docs/extensions/filters.llms.md`
 Task: Metadata / project filters -> Read `https://quarto.org/docs/extensions/metadata.llms.md`
-Task: Custom AST nodes / filter timing -> Read the file `references/custom-ast-nodes.md` in this skill directory
+Task: Custom AST nodes (callout, conditional block, tabset, panel layout, cross-reference, decorated code block, theorem, proof) / filter timing -> Read the file `references/custom-ast-nodes.md` in this skill directory
 
 Fetch only pages relevant to the current task.
 
