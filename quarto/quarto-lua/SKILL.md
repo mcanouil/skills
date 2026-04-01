@@ -19,11 +19,11 @@ Write Lua shortcodes and filters for Quarto.
 
 Task: Write a shortcode -> "Writing a Shortcode" below
 Task: Write a filter -> "Writing a Filter" below
-Task: Pandoc Lua API (constructors, types, methods) -> Fetch `https://quarto.org/docs/extensions/lua-api.llms.md`
-Task: Debug Lua / tooling -> Fetch `https://quarto.org/docs/extensions/lua.llms.md`
-Task: Shortcode details (args, raw output) -> Fetch `https://quarto.org/docs/extensions/shortcodes.llms.md`
-Task: Filter details (AST traversal, multi-pass) -> Fetch `https://quarto.org/docs/extensions/filters.llms.md`
-Task: Metadata / project filters -> Fetch `https://quarto.org/docs/extensions/metadata.llms.md`
+Task: Quarto and Pandoc Lua API (constructors, types, methods) -> Read `https://quarto.org/docs/extensions/lua-api.llms.md`
+Task: Debug Lua / tooling -> Read `https://quarto.org/docs/extensions/lua.llms.md`
+Task: Shortcode details (args, raw output) -> Read `https://quarto.org/docs/extensions/shortcodes.llms.md`
+Task: Filter details (AST traversal, multi-pass) -> Read `https://quarto.org/docs/extensions/filters.llms.md`
+Task: Metadata / project filters -> Read `https://quarto.org/docs/extensions/metadata.llms.md`
 Task: Custom AST nodes / filter timing -> Read the file `references/custom-ast-nodes.md` in this skill directory
 
 Fetch only pages relevant to the current task.
