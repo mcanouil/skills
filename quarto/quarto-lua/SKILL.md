@@ -1,10 +1,6 @@
 ---
 name: quarto-lua
-description: >
-  Write Lua shortcodes and filters for Quarto.
-  Use when creating, debugging, or modifying Lua code that runs inside
-  Quarto, including shortcode handlers, Quarto Lua filters, and
-  Quarto-specific Lua APIs.
+description: Write Lua shortcodes and filters for Quarto. Use when creating, debugging, or modifying Lua code that runs inside Quarto, including shortcode handlers, Quarto Lua filters, and Quarto-specific Lua APIs.
 metadata:
   author: Mickaël Canouil (@mcanouil)
   version: "1.0"
@@ -19,6 +15,8 @@ Write Lua shortcodes and filters for Quarto.
 
 ## When to Use What
 
+**First question**: When asked to create a new shortcode or filter, ask the user whether it should be a standalone file (registered in `_quarto.yml` or document YAML) or packaged as a Quarto extension (with `_extension.yml`).
+
 Task: Write a shortcode -> "Writing a Shortcode" below
 Task: Write a filter -> "Writing a Filter" below
 Task: Pandoc Lua API (constructors, types, methods) -> WebFetch `https://quarto.org/docs/extensions/lua-api.llms.md`
@@ -30,6 +28,34 @@ Task: Custom AST nodes / filter timing -> Read `references/custom-ast-nodes.md` 
 
 Fetch only pages relevant to the current task.
 
+## Quarto Extension Structure
+
+A Quarto extension lives in `_extensions/<name>/` with an `_extension.yml` manifest and one or more `.lua` files alongside it.
+
+```
+_extensions/
+  my-extension/
+    _extension.yml
+    my-extension.lua
+```
+
+Extension manifest (`_extension.yml`):
+
+```yaml
+title: My Extension
+author: Firstname Lastname
+version: X.Y.Z
+quarto-required: ">=1.6.0"
+contributes:
+  shortcodes:          # for shortcode extensions
+    - my-shortcode.lua
+  filters:             # for filter extensions
+    - my-filter.lua
+```
+
+Fields: `title` (display name), `author`, `version` (semver), `quarto-required` (optional minimum Quarto version), `contributes` (what the extension provides).
+List only the relevant key under `contributes` (shortcodes, filters, or both).
+
 ## Writing a Shortcode
 
 A shortcode exports a function called whenever `{{< name ... >}}` appears in `.qmd`.
@@ -39,6 +65,8 @@ Register under `shortcodes:` in the document YAML header or project YAML (`_quar
 shortcodes:
   - my-shortcode.lua
 ```
+
+For extension packaging, register in `_extension.yml` instead (see "Quarto Extension Structure" above).
 
 Add a file header (see "Lua File Header Convention"), then:
 
@@ -63,6 +91,8 @@ Register under `filters:` in the document YAML header or project YAML (`_quarto.
 filters:
   - my-filter.lua
 ```
+
+For extension packaging, register in `_extension.yml` instead (see "Quarto Extension Structure" above).
 
 Add a file header (see "Lua File Header Convention"), then:
 
@@ -183,7 +213,7 @@ For full constructor signatures and filter timing details, read `references/cust
 
 ## Resources
 
-- [Quarto Lua API](https://quarto.org/docs/extensions/lua-api.html)
+- [Quarto Lua API](https://quarto.org/docs/extensions/lua-api.llms.md)
 - [Pandoc Lua Filters reference](https://pandoc.org/lua-filters.html)
 - [Pandoc community Lua filters](https://github.com/pandoc/lua-filters)
 - [LuaRocks style guide](https://github.com/luarocks/lua-style-guide)
