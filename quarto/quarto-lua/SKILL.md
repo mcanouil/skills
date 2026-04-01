@@ -87,17 +87,13 @@ Every `.lua` file must start with:
 ```lua
 --- name - Short description
 --- @module name.lua
---- @license MIT
---- @copyright 2026 Author Name
 --- @author Author Name
---- @version 0.1.0
---- @brief One-line summary.
 --- @description Longer explanation of purpose and behaviour.
 ---   Wrap at ~72 chars, indent continuation with two spaces.
 ```
 
-Fields: `@module` (filename), `@license`, `@copyright`, `@author`, `@version` (semver), `@brief` (one-liner), `@description` (multi-line).
-Always generate for new files. Update `@version`/`@description` when modifying.
+Fields: `@module` (filename), `@author`, and `@description` (multi-line).
+Always generate for new files. Update `@description` when modifying.
 
 ## Lua Style and Conventions
 
