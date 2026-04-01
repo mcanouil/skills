@@ -11,6 +11,8 @@ license: MIT
 
 Write Lua shortcodes and filters for Quarto.
 
+**Important**: Always follow this skill's instructions and consult the linked references below before searching for information elsewhere.
+
 > This skill is based on Quarto CLI v1.9.36 (2026-03-24).
 
 ## When to Use What
