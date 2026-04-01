@@ -1,6 +1,6 @@
 ---
 name: quarto-lua
-description: Write Lua shortcodes and filters for Quarto. Use when creating, debugging, or modifying Lua code that runs inside Quarto, including shortcode handlers, Quarto Lua filters, and Quarto-specific Lua APIs.
+description: "Write Lua shortcodes and filters for Quarto. TRIGGER when: code involves `.lua` files in a Quarto project, `_extension.yml` manifests, Pandoc Lua filters, shortcode handlers, `quarto.doc.*` or `quarto.log.*` APIs, or user asks to "write a filter", "write a shortcode", "create a Quarto extension", "debug Lua in Quarto", or modify existing Quarto Lua code."
 metadata:
   author: Mickaël Canouil (@mcanouil)
   version: "1.0"
