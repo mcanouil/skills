@@ -93,7 +93,7 @@ Create and use `_brand.yml` files for consistent branding across Quarto document
 
 ---
 
-### `lua`
+### `quarto-lua`
 
 Write Lua shortcodes and filters for Quarto. Covers shortcode handlers, Pandoc AST filters, Lua coding conventions, Quarto-specific Lua APIs, and common patterns. Includes runtime access to Quarto's LLM-optimised documentation (`.llms.md` pages) for detailed API reference.
 
