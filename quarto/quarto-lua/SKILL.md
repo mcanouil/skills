@@ -33,7 +33,7 @@ Fetch only pages relevant to the current task.
 ## Writing a Shortcode
 
 A shortcode exports a function called whenever `{{< name ... >}}` appears in `.qmd`.
-Register under `shortcodes:` in the document YAML header or projec YAML (`_quarto.yml`).
+Register under `shortcodes:` in the document YAML header or project YAML (`_quarto.yml`).
 
 ```yaml
 shortcodes:
@@ -57,7 +57,7 @@ Verify the exact handler signature against the shortcodes `.llms.md` page when t
 ## Writing a Filter
 
 A filter returns a list of handler tables mapping AST element types to transform functions.
-Register under `filters:` in the document YAML header or projec YAML (`_quarto.yml`).
+Register under `filters:` in the document YAML header or project YAML (`_quarto.yml`).
 
 ```yaml
 filters:
